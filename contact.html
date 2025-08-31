@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishDash || Contact Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="flex justify-between items-center my-[30px]">
+                    <a href="index.html">
+                        <img class="md:w-auto w-[140px]" src="assets/img/logo.svg" alt="">
+                    </a>
+
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center md:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="md:block hidden">
+                        <ul class="flex justify-between gap-[30px]">
+                            <li class="group relative w-max">
+                                <a href="index.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Home</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="about.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">About Us</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="menus.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Menus</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="blog.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Blog</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="contact.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Contact</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:block hidden">
+                        <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="bg-mainBg border border-primaryColor border-opacity-30 hidden m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-14 z-20">
+                    <div class="p-5">
+                        <ul class="dropdown flex flex-col gap-y-4">
+                            <li><a href="#" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Home</a></li>
+                            <li><a href="about.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">About Us</a></li>
+                            <li><a href="menus.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Menus</a></li>
+                            <li><a href="blog.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Blog</a></li>
+                            <li><a href="contact.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Contact</a></li>
+                        </ul>
+                        <div class="text-center mt-5">
+                            <a href="reservation.html" class="block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7  border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Banner Area Start Here -->
+    <section class="md:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        class="container xl:px-0">
+            <h2 class="font-Fraunces font-normal lg:text-130xl md:text-70xl text-42xl md:leading-80 leading-50 lg:leading-130 text-primaryColor text-center">Contact Us</h2>
+            <p class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor lg:w-630 w-full mx-auto text-center pt-5">Delight in a diverse selection of flavors. From savory appetizers to decadent desserts, there’s something for everyone.</p>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] md:mt-[70px] mt-10">
+                <div class="bg-white bg-opacity-10 p-[30px]">
+                    <div class="bg-btnBg md:w-16 w-10 h-10 md:h-16 flex justify-center items-center">
+                        <svg class="md:w-auto md:h-auto w-5 h-5" width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.35889 12.587C1.3805 6.22609 6.55453 1.0871 12.9154 1.10871C19.2763 1.13032 24.4153 6.30435 24.3937 12.6652V12.7957C24.3154 16.9304 22.0067 20.7522 19.1763 23.7391C17.5576 25.4201 15.7499 26.9082 13.7893 28.1739C13.2651 28.6274 12.4875 28.6274 11.9632 28.1739C9.04049 26.2715 6.47529 23.8697 4.38497 21.0783C2.52191 18.6441 1.46413 15.6896 1.35889 12.6261L1.35889 12.587Z" stroke="#383632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12.8759" cy="12.8087" r="3.6913" stroke="#383632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                    <h4 class="font-DM_Sans font-semibold text-22xl leading-32 text-primaryColor pt-[30px]">Location</h4>
+                    <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-4">123 Gourmet Street, Foodie Town, Culinary City, 56789, USA</p>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-[30px]">
+                    <div class="bg-btnBg md:w-16 w-10 h-10 md:h-16 flex justify-center items-center">
+                        <svg class="md:w-auto md:h-auto w-5 h-5" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48599 5.3088C2.96047 4.52318 5.57474 1.66565 7.44031 1.75191C7.99798 1.79813 8.49095 2.13548 8.89149 2.52676C9.81118 3.42484 12.4439 6.82152 12.5934 7.53629C12.9569 9.28932 10.868 10.2999 11.5073 12.0667C13.1372 16.055 15.9455 18.8632 19.9355 20.4914C21.7009 21.1307 22.7115 19.0419 24.4647 19.407C25.1779 19.5564 28.5763 22.189 29.4744 23.1087C29.8642 23.5076 30.2031 24.0021 30.2493 24.5598C30.3186 26.5238 27.2838 29.1749 26.6922 29.5138C25.2965 30.512 23.4756 30.4951 21.2557 29.463C15.0613 26.8858 5.16188 17.1733 2.53682 10.745C1.5324 8.53758 1.46308 6.70445 2.48599 5.3088Z" stroke="#383632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                         
+                    </div>
+                    <h4 class="font-DM_Sans font-semibold text-22xl leading-32 text-primaryColor pt-[30px]">Phone Number</h4>
+                    <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-4">+1 (555) 123-4567
+                       <br/> +1 (555) 123-6745</p>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-[30px]">
+                    <div class="bg-btnBg md:w-16 w-10 h-10 md:h-16 flex justify-center items-center">                    
+                        <svg class="md:w-auto md:h-auto w-5 h-5" width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.9014 9.59167L17.5032 14.7431C16.2924 15.6924 14.5951 15.6924 13.3842 14.7431L6.93115 9.59167" stroke="#383632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33132 1.25H22.4732C24.5123 1.27287 26.4531 2.13489 27.8435 3.6353C29.234 5.13571 29.9528 7.14354 29.8325 9.19118V18.983C29.9528 21.0306 29.234 23.0385 27.8435 24.5389C26.4531 26.0393 24.5123 26.9013 22.4732 26.9242H8.33132C3.95146 26.9242 0.999512 23.361 0.999512 18.983V9.19118C0.999512 4.81317 3.95146 1.25 8.33132 1.25Z" stroke="#383632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                    </div>
+                    <h4 class="font-DM_Sans font-semibold text-22xl leading-32 text-primaryColor pt-[30px]">Phone Number</h4>
+                    <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-4">contact@demorestaurant.com
+                        <br/>contact@demorestaurant2.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End Here -->
+
+    <!-- Contact Info Area Start Here -->
+    <section class="md:mt-[100px] mt-10 bg-btnBg">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            class="md:py-[100px] py-10">
+                <h4 class="font-Fraunces font-normal md:text-70xl text-36xl leading-44 md:leading-80 text-mainBg text-center lg:w-740 w-full mx-auto">Get in Touch with Restaurant TNC</h4>
+                <div class="md:mt-[70px] mt-7 lg:w-850 w-full mx-auto">
+                    <form>
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-[30px] mt-[30px]">
+                            <div class="lg:w-410 w-full">
+                                <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">First Name*</label>
+                                <input class="mt-4 lg:w-410 w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg" type="text" placeholder="First Name">    
+                            </div>
+                            <div class="lg:w-410 w-full">
+                                <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Last Name*</label>
+                                <input class="mt-4 lg:w-410 w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg" type="text" placeholder="Last Name*">    
+                            </div>
+                            <div class="lg:w-410 w-full">
+                                <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Email Address</label>
+                                <input class="mt-4 lg:w-410 w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg" type="text" placeholder="Email address">    
+                            </div>
+                            <div class="lg:w-410 w-full">
+                                <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Phone Number*</label>
+                                <input class="mt-4 lg:w-410 w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg" type="text" placeholder="Phone number">    
+                            </div>
+                        </div>
+                        <div class="mt-[30px]">
+                            <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Choose a Topic</label>
+                            <div class="relative mt-4">
+                                <select name="" id="" class="appearance-none bg-white bg-opacity-10 w-full py-3.5 focus:outline-none px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg">
+                                    <option value="">Select one...</option>
+                                    <option value="10">4 guest</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                                    <svg class="h-4 w-4 text-mainBg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="mt-[30px] block text-mainBg font-DM_Sans font-medium text-lg leading-8">Message</label>
+                        <textarea placeholder="Briefly describe what you’re looking for." class="h-48 mt-4 w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg"></textarea>            
+                        <div class="mt-8 text-center">
+                            <a href="#" class="md:inline-block block text-primaryColor py-[15px] px-[45px] bg-mainBg font-DM_Sans font-medium text-lg leading-8 border border-mainBg transition ease-in-out duration-500 hover:bg-transparent hover:text-mainBg hover:transition hover:ease-in-out hover:duration-500">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Info Area End Here -->
+
+    <!-- FAQ Area Start Here -->
+    <section class="bg-[#403E3B]">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col justify-between lg:items-center lg:gap-[75px] gap-10 lg:py-[100px] py-10">
+                <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                >
+                    <img class="lg:w-auto w-full" src="assets/img/aboutPage/faq.png" alt="">
+                </div>
+                <div class="lg:w-585 w-full">
+                    <h4
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    data-aos-offset="20"
+                    data-aos-once="true"
+                    class="font-Fraunces font-normal md:text-70xl text-36xl leading-44 md:leading-80 text-primaryColor">Frequently Asked Questions</h4>
+                    <div class="overflow-hidden lg:mt-5 mt-2">
+                        <div x-data="{ openTab: 3, faqData: [
+                            {
+                                id: 1,
+                                question: 'What are your opening hours?',
+                                answer: 'Absolutely! Our menu includes a variety of vegetarian and vegan dishes made from fresh, high-quality ingredients. Check out the menu section for more details.'
+                            },
+                            {
+                                id: 2,
+                                question: 'Do you offer online reservations?',
+                                answer: 'Absolutely! Our menu includes a variety of vegetarian and vegan dishes made from fresh, high-quality ingredients. Check out the menu section for more details.'
+                            },
+                            {
+                                id: 3,
+                                question: 'Do you have vegetarian or vegan options?',
+                                answer: 'Absolutely! Our menu includes a variety of vegetarian and vegan dishes made from fresh, high-quality ingredients. Check out the menu section for more details.'
+                            },
+                            {
+                                id: 4,
+                                question: 'Where can I find your menu?',
+                                answer: 'Absolutely! Our menu includes a variety of vegetarian and vegan dishes made from fresh, high-quality ingredients. Check out the menu section for more details.'
+                            },
+                        ] }">
+                            <template x-for="(faq, index) in faqData" :key="index">
+                                <div data-aos="fade-down" data-aos-duration="1000" data-aos-offset="20" data-aos-once="true" class="py-7 border-b border-b-white border-opacity-30">
+                                    <div @click="openTab === faq.id ? openTab = -1 : openTab = faq.id" class="w-full text-left flex justify-between md:items-center cursor-poDM_Sans transition-colors duration-300 gap-4">
+                                        <!-- Change text color dynamically based on openTab -->
+                                        <h6 x-text="faq.question" class="w-auto font-semibold font-DM_Sans md:text-22xl text-base leading-7 md:leading-32 text-primaryColor"></h6> 
+                                        <div class=" flex justify-center items-center lg:w-8 w-7 lg:h-8 h-7 md:mt-0 mt-1 bg-btnBg" x-show="openTab === faq.id">
+                                            <svg width="14" height="6" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 7L7 1L13 7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class=" flex justify-center items-center lg:w-8 w-7 lg:h-8 h-7 border border-borderColor md:mt-0 mt-1" x-show="openTab !== faq.id">
+                                            <svg width="14" height="6" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L7 7L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div x-show="openTab === faq.id" class="md:pt-6 pt-3 transition-all duration-300 md:w-520 w-full">
+                                        <p class="text-secondaryColor lg:text-lg text-base font-DM_Sans text-left font-normal leading-7" x-html="faq.answer"></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="md:mt-[100px] mt-[30px] mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        class="container">
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Facebook</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Instagram</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">X</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Youtube</a>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <div class="flex lg:flex-nowrap flex-wrap justify-between items-start lg:gap-y-0 gap-y-[30px]">
+                <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">123 Gourmet Street, Foodie Town,<br/> Culinary City, 56789</h4>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Mon–Fri: 11:00 AM – 10:00 PM</h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Sat–Sun: 9:00 AM – 11:00 PM</h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">contact@demorestaurant.com</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">+1 (555) 123-4567</a></h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Terms & Conditions</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Privacy Policy</a></h4>
+                </div>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor text-center">&copy; 2024 Company All Rights Reserved.</p>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <a href="index.html">
+                <img src="assets/img/footer-logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/slider.js"></script>
+
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+</body>
+</html>

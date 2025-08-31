@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishDash || Blog Details Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="flex justify-between items-center my-[30px]">
+                    <a href="index.html">
+                        <img class="md:w-auto w-[140px]" src="assets/img/logo.svg" alt="">
+                    </a>
+
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center md:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="md:block hidden">
+                        <ul class="flex justify-between gap-[30px]">
+                            <li class="group relative w-max">
+                                <a href="index.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Home</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="about.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">About Us</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="menus.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Menus</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="blog.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Blog</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="contact.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Contact</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:block hidden">
+                        <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7">Reserve a Table</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="bg-mainBg border border-primaryColor border-opacity-30 hidden m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-14 z-20">
+                    <div class="p-5">
+                        <ul class="dropdown flex flex-col gap-y-4">
+                            <li><a href="#" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Home</a></li>
+                            <li><a href="about.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">About Us</a></li>
+                            <li><a href="menus.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Menus</a></li>
+                            <li><a href="blog.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Blog</a></li>
+                            <li><a href="contact.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Contact</a></li>
+                        </ul>
+                        <div class="text-center mt-5">
+                            <a href="reservation.html" class="block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7">Reserve a Table</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Blog Details Area Start Here -->
+     <section class="md:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <div class="lg:w-850 w-full mx-auto">
+                <span class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Food & Recipes</span>
+                <h4 class="font-Fraunces font-normal md:text-[78px] text-40xl leading-50 md:leading-[88px] text-primaryColor pt-8">5 Must-Try Dishes at DishDash Restaurant</h4>            
+                <p class="pt-8 font-DM_Sans font-medium text-lg leading-8 text-primaryColor">Tim Southee</p>
+                <p class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor pt-1">November 21, 2024</p>
+            </div>
+            <img class="md:mt-[70px] mt-7" src="assets/img/blogPage/blog-post.png" alt="">
+            <div class="lg:w-850 w-full mx-auto md:mt-[70px] mt-7">
+                <div class="bg-primaryColor bg-opacity-10 md:p-[30px] p-4">
+                    <p class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Jump ahead in this article</p>
+                    <a href="#1" class="flex items-center gap-4 mt-[30px]">
+                        <div class="bg-btnBg w-[30px] h-[30px] flex justify-center items-center">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L7 1M7 13L13 7M7 13L1 7" stroke="#383632" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </div>
+                        <h4 class="font-DM_Sans font-medium md:text-xl text-base leading-6 md:leading-8 text-primaryColor">1. Kabob Combination Platter</h4>
+                    </a>
+
+                    <a href="#2" class="flex items-center gap-4 mt-[18px]">
+                        <div class="bg-btnBg w-[30px] h-[30px] flex justify-center items-center">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L7 1M7 13L13 7M7 13L1 7" stroke="#383632" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                        </div>
+                        <h4 class="font-DM_Sans font-medium md:text-xl text-base leading-6 md:leading-8 text-primaryColor">2. Saffron Chicken with Cream Sauce</h4>
+                    </a>
+
+                    <a href="#3" class="flex items-center gap-4 mt-[18px]">
+                        <div class="bg-btnBg w-[30px] h-[30px] flex justify-center items-center">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L7 1M7 13L13 7M7 13L1 7" stroke="#383632" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                        </div>
+                        <h4 class="font-DM_Sans font-medium md:text-xl text-base leading-6 md:leading-8 text-primaryColor">3. Shish Tawook</h4>
+                    </a>
+
+                    <a href="#4" class="flex items-center gap-4 mt-[18px]">
+                        <div class="bg-btnBg w-[30px] h-[30px] flex justify-center items-center">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L7 1M7 13L13 7M7 13L1 7" stroke="#383632" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                        </div>
+                        <h4 class="font-DM_Sans font-medium md:text-xl text-base leading-6 md:leading-8 text-primaryColor">4. Lamb Biryani</h4>
+                    </a>
+
+                    <a href="#5" class="flex items-center gap-4 mt-[18px]">
+                        <div class="bg-btnBg w-[30px] h-[30px] flex justify-center items-center">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L7 1M7 13L13 7M7 13L1 7" stroke="#383632" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                        </div>
+                        <h4 class="font-DM_Sans font-medium md:text-xl text-base leading-6 md:leading-8 text-primaryColor">5. Baklava Ice Cream Sundae</h4>
+                    </a>
+                </div>
+                <p class="md:pt-12 pt-4 font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">If you’re a food enthusiast looking for a dining experience that blends authentic flavors, fresh ingredients, and creative presentation, DishDash Restaurant is a must-visit. Known for its fusion of traditional and modern cuisine, DishDash offers an array of dishes that delight the palate and keep customers coming back for more. To help you make the most of your visit, here are five must-try dishes you simply can’t miss!</p>
+                
+                <div id="1" class="md:mt-12 mt-5">
+                    <h4 class="font-Fraunces font-normal md:text-28xl text-22xl leading-32 md:leading-38 text-primaryColor">1. Kabob Combination Platter</h4>
+                    <p class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A feast for the senses, the Kabob Combination Platter offers a variety of succulent kabobs, including lamb, chicken, and beef, all grilled to perfection. Served with fragrant basmati rice, a side of tangy yogurt sauce, and fresh pita bread, this dish is perfect for those who love bold, smoky flavors.</p>
+                    <h5 class="pt-[18px] font-DM_Sans font-medium text-lg leading-8 text-primaryColor">Why You’ll Love It:</h5>
+                    <ul class="list-disc mt-[18px] ml-[18px]">
+                        <li class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">The subtle sweetness of saffron enhances the creamy sauce.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Comforting and satisfying without being too heavy.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A great option for first-timers.</li>
+                    </ul>
+                </div>
+
+                <div id="2" class="md:mt-12 mt-5">
+                    <h4 class="font-Fraunces font-normal md:text-28xl text-22xl leading-32 md:leading-38 text-primaryColor">2. Saffron Chicken with Cream Sauce</h4>
+                    <p class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A feast for the senses, the Kabob Combination Platter offers a variety of succulent kabobs, including lamb, chicken, and beef, all grilled to perfection. Served with fragrant basmati rice, a side of tangy yogurt sauce, and fresh pita bread, this dish is perfect for those who love bold, smoky flavors.</p>
+                    <h5 class="pt-[18px] font-DM_Sans font-medium text-lg leading-8 text-primaryColor">Why You’ll Love It:</h5>
+                    <ul class="list-disc mt-[18px] ml-[18px]">
+                        <li class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">The subtle sweetness of saffron enhances the creamy sauce.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Comforting and satisfying without being too heavy.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A great option for first-timers.</li>
+                    </ul>
+                </div>
+
+                <div id="3" class="md:mt-12 mt-5">
+                    <h4 class="font-Fraunces font-normal md:text-28xl text-22xl leading-32 md:leading-38 text-primaryColor">3. Shish Tawook</h4>
+                    <p class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A feast for the senses, the Kabob Combination Platter offers a variety of succulent kabobs, including lamb, chicken, and beef, all grilled to perfection. Served with fragrant basmati rice, a side of tangy yogurt sauce, and fresh pita bread, this dish is perfect for those who love bold, smoky flavors.</p>
+                    <h5 class="pt-[18px] font-DM_Sans font-medium text-lg leading-8 text-primaryColor">Why You’ll Love It:</h5>
+                    <ul class="list-disc mt-[18px] ml-[18px]">
+                        <li class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">The subtle sweetness of saffron enhances the creamy sauce.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Comforting and satisfying without being too heavy.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A great option for first-timers.</li>
+                    </ul>
+                </div>
+
+                <div id="4" class="md:mt-12 mt-5">
+                    <h4 class="font-Fraunces font-normal md:text-28xl text-22xl leading-32 md:leading-38 text-primaryColor">4. Lamb Biryani</h4>
+                    <p class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A feast for the senses, the Kabob Combination Platter offers a variety of succulent kabobs, including lamb, chicken, and beef, all grilled to perfection. Served with fragrant basmati rice, a side of tangy yogurt sauce, and fresh pita bread, this dish is perfect for those who love bold, smoky flavors.</p>
+                    <h5 class="pt-[18px] font-DM_Sans font-medium text-lg leading-8 text-primaryColor">Why You’ll Love It:</h5>
+                    <ul class="list-disc mt-[18px] ml-[18px]">
+                        <li class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">The subtle sweetness of saffron enhances the creamy sauce.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Comforting and satisfying without being too heavy.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A great option for first-timers.</li>
+                    </ul>
+                </div>
+
+                <div id="5" class="md:mt-12 mt-5">
+                    <h4 class="font-Fraunces font-normal md:text-28xl text-22xl leading-32 md:leading-38 text-primaryColor">5. Baklava Ice Cream Sundae</h4>
+                    <p class="pt-[18px] font-DM_Sans font-normal  md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A feast for the senses, the Kabob Combination Platter offers a variety of succulent kabobs, including lamb, chicken, and beef, all grilled to perfection. Served with fragrant basmati rice, a side of tangy yogurt sauce, and fresh pita bread, this dish is perfect for those who love bold, smoky flavors.</p>
+                    <h5 class="pt-[18px] font-DM_Sans font-medium text-lg leading-8 text-primaryColor">Why You’ll Love It:</h5>
+                    <ul class="list-disc mt-[18px] ml-[18px]">
+                        <li class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">The subtle sweetness of saffron enhances the creamy sauce.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Comforting and satisfying without being too heavy.</li>
+                        <li class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">A great option for first-timers.</li>
+                    </ul>
+                </div>
+
+                <div class="md:mt-12 mt-5">
+                    <h4 class="font-Fraunces font-normal md:text-28xl text-22xl leading-32 md:leading-38 text-primaryColor">Conclusion</h4>
+                    <p class="pt-[18px] font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">DishDash Restaurant offers an unparalleled dining experience, blending the rich culinary traditions of the Middle East with a modern twist. These five dishes represent the very best of what they have to offer, but the menu is full of surprises waiting to be discovered. So, gather your friends, make a reservation, and let DishDash take your taste buds on an unforgettable journey.
+                        <br/>
+                        <br/>
+                        Have you tried any of these dishes? Let us know your favorites in the comments below!</p>
+                </div>
+            </div>
+            
+        </div>
+     </section>
+     <!-- Blog Details Area End Here -->
+
+     <!-- Similar Article Area Start Here -->
+     <section class="md:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <h4 class="font-Fraunces font-normal text-30xl leading-40 text-primaryColor">Similar Articles</h4>
+            <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] mt-[30px]">
+                <div class="bg-primaryColor bg-opacity-10">
+                    <img class="w-full" src="assets/img/blogPage/blog-4.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog.html">Celebrating Seasonal Ingredients This Month</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Discover the fresh, locally-sourced ingredients featured in this month’s specials and how we incorporate them into our menu.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primaryColor bg-opacity-10">
+                    <img class="w-full" src="assets/img/blogPage/blog-5.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog.html">Tips for Hosting the Perfect Dinner Party</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Get expert advice from our team on planning, plating, and serving like a pro, whether you’re dining at home or with us.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primaryColor bg-opacity-10">
+                    <img class="w-full" src="assets/img/blogPage/blog-6.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog.html">Customer Stories: Why They Love DishDash</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Hear from our loyal customers about their favorite dishes, memorable moments, and why they keep coming back.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Similar Article Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="md:mt-[100px] mt-[30px] mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Facebook</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Instagram</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">X</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Youtube</a>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <div class="flex lg:flex-nowrap flex-wrap justify-between items-start lg:gap-y-0 gap-y-[30px]">
+                <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">123 Gourmet Street, Foodie Town,<br/> Culinary City, 56789</h4>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Mon–Fri: 11:00 AM – 10:00 PM</h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Sat–Sun: 9:00 AM – 11:00 PM</h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">contact@demorestaurant.com</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">+1 (555) 123-4567</a></h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Terms & Conditions</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Privacy Policy</a></h4>
+                </div>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor text-center">&copy; 2024 Company All Rights Reserved.</p>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <a href="index.html">
+                <img src="assets/img/footer-logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+</body>
+</html>

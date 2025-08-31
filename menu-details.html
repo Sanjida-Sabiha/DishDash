@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishDash || Menus Details Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="flex justify-between items-center my-[30px]">
+                    <a href="index.html">
+                        <img class="md:w-auto w-[140px]" src="assets/img/logo.svg" alt="">
+                    </a>
+
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center md:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="md:block hidden">
+                        <ul class="flex justify-between gap-[30px]">
+                            <li class="group relative w-max">
+                                <a href="index.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Home</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="about.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">About Us</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="menus.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Menus</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="blog.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Blog</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="contact.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Contact</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:block hidden">
+                        <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="bg-mainBg border border-primaryColor border-opacity-30 hidden m-4 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-14 z-20">
+                    <div class="p-5">
+                        <ul class="dropdown flex flex-col gap-y-4">
+                            <li><a href="#" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Home</a></li>
+                            <li><a href="about.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">About Us</a></li>
+                            <li><a href="menus.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Menus</a></li>
+                            <li><a href="blog.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Blog</a></li>
+                            <li><a href="contact.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Contact</a></li>
+                        </ul>
+                        <div class="text-center mt-5">
+                            <a href="reservation.html" class="block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Banner Area Start Here -->
+    <section class="md:mt-[100px] mt-10">
+        <div class="container">
+            <div class="flex xl:flex-row flex-col justify-between xl:items-center xl:gap-[75px] gap-5">
+                <img
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                
+                src="assets/img/menu-banner.png" alt="">
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                
+                >
+                    <div class="lg:mt-[222px] mt-5 xl:hidden flex justify-between items-center p-[18px] bg-primaryColor bg-opacity-10">
+                        <h4 class="font-Fraunces font-normal md:text-30xl text-24xl leading-34 md:leading-40 text-primaryColor">Categories</h4>
+                        <span class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Lunch</span>
+                    </div>
+                    <h5 class="xl:pt-0 pt-5 font-Fraunces font-normal md:text-40xl text-30xl leading-40 md:leading-50 text-primaryColor">Classic Margherita Pizza</h5>
+                    <p class="pt-5 md:text-lg text-base leading-7 md:leading-8 font-DM_Sans font-normal text-secondaryColor">Stone-baked pizza topped with fresh mozzarella, vine-ripened tomatoes, and fragrant basil leaves.</p>
+                    <span class="block md:pt-10 pt-4 font-Fraunces font-normal md:text-50xl text-28xl leading-38 md:leading-60 text-[#D5AE75]">$14.99</span>    
+                    <div class="md:mt-10 mt-4">
+                        <a href="menus.html" class="md:inline-block block text-center text-mainBg py-[15px] px-[45px] bg-btnBg font-DM_Sans font-medium text-xl leading-32 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Order Online</a>
+                    </div>
+                    <div class="lg:mt-[222px] mt-5 xl:flex hidden justify-between items-center p-[18px] bg-primaryColor bg-opacity-10">
+                        <h4 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor">Categories</h4>
+                        <span class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Lunch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End Here -->
+
+    <!-- About Dish Area Start Here -->
+    <section class="md:mt-[100px] mt-10 bg-btnBg">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            
+            class="md:py-[100px] py-10">
+                <h4 class="font-Fraunces font-normal md:text-70xl text-36xl leading-44 md:leading-80 text-mainBg text-center">About the dish</h4>
+                <div class="md:mt-[70px] mt-7 border border-primaryColor border-opacity-30 bg-primaryColor bg-opacity-10 md:p-12 p-4">
+                    <h4 class="font-Fraunces font-normal md:text-30xl text-24xl leading-34 md:leading-40">Overview</h4>
+                    <p class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-mainBg md:pt-5 pt-2">Savor the simplicity and elegance of a Classic Margherita Pizza, a timeless favorite. Handcrafted with love, this pizza features a perfectly baked thin crust, topped with fresh tomato sauce, creamy mozzarella cheese, and fragrant basil leaves for a burst of authentic Italian flavors.</p>
+                    <div class="md:mt-10 mt-4">
+                        <h4 class="font-Fraunces font-normal md:text-30xl text-24xl leading-34 md:leading-40">Key Ingredients</h4>
+                        <div class="mt-5">
+                            <p class="font-DM_Sans font-semibold md:text-lg text-base leading-7 md:leading-8 text-mainBg">Pizza Dough:<span class="font-normal"> Hand-stretched and baked to golden perfection.</span></p>
+                            <p class="md:pt-2.5 pt-2 font-DM_Sans font-semibold md:text-lg text-base leading-7 md:leading-8 text-mainBg">Tomato Sauce:<span class="font-normal"> Made from vine-ripened tomatoes with a hint of garlic and herbs.</span></p>
+                            <p class="md:pt-2.5 pt-2 font-DM_Sans font-semibold md:text-lg text-base leading-7 md:leading-8 text-mainBg">Mozzarella Cheese:<span class="font-normal"> Rich, gooey, and perfectly melted.</span></p>
+                            <p class="md:pt-2.5 pt-2 font-DM_Sans font-semibold md:text-lg text-base leading-7 md:leading-8 text-mainBg">Fresh Basil Leaves:<span class="font-normal"> Adds an aromatic, refreshing touch.</span></p>
+                            <p class="md:pt-2.5 pt-2 font-DM_Sans font-semibold md:text-lg text-base leading-7 md:leading-8 text-mainBg">Extra Virgin Olive Oil:<span class="font-normal"> A drizzle for enhanced flavor.</span></p>
+                        </div>
+                    </div>
+                    <div class="md:mt-10 mt-4">
+                        <h4 class="font-Fraunces font-normal md:text-30xl text-24xl leading-34 md:leading-40">Nutritional Information (Per Serving)</h4>
+                        <div class="flex md:flex-nowrap flex-wrap md:justify-between justify-normal mt-5 md:gap-0 gap-5">
+                            <h4 class=" font-DM_Sans font-semibold text-lg leading-8 text-mainBg">Calories
+                                <span class="block font-normal">280 kcal</span>
+                            </h4>
+
+                            <h4 class=" font-DM_Sans font-semibold text-lg leading-8 text-mainBg">Protein
+                                <span class="block font-normal">10g</span>
+                            </h4>
+
+                            <h4 class=" font-DM_Sans font-semibold text-lg leading-8 text-mainBg">Carbohydrates
+                                <span class="block font-normal">32g</span>
+                            </h4>
+
+                            <h4 class=" font-DM_Sans font-semibold text-lg leading-8 text-mainBg">Fats
+                                <span class="block font-normal">11g</span>
+                            </h4>
+
+                            <h4 class=" font-DM_Sans font-semibold text-lg leading-8 text-mainBg">Sodium
+                                <span class="block font-normal">550mg</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Dish Area End Here -->
+
+    <!-- Promo Area Start Here -->
+    <section class="w-full md:h-[1073px] h-[1233px] relative md:mt-[100px] mt-10">
+        <div class="w-full md:h-[728px] h-[190px] bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/homePage/promo.png');">
+            <div class="container">
+                <div class="absolute lg:top-auto md:top-[8%] top-[17%] lg:w-886 w-full left-1/2 bottom-0 transform -translate-x-1/2 -translate-y-0">
+                    <div class="bg-primaryColor md:px-12 md:py-12 px-[18px] py-[30px] lg:mx-0 mx-[18px]">
+                        <div class="md:w-520 w-full mx-auto text-center">
+                            <h4 class="font-Fraunces font-normal md:text-40xl text-30xl leading-40 md:leading-50 text-mainBg">Reserve your table today!</h4>
+                            <p class="font-DM_Sans font-normal text-mainBg md:text-lg text-sm leading-6 md:leading-8 md:pt-5 pt-4">Book your spot now for an unforgettable dining experience. We can’t wait to serve you!</p>
+                        </div>
+                        <div class="mt-[30px]">
+                            <form>
+                                <div class="grid lg:grid-cols-2 grid-cols-1 gap-[15px]">
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">First name</label>
+                                        <input class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" type="text" placeholder="Full Name*">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Email Address</label>
+                                        <input class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" type="text" placeholder="Email address">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Phone Number*</label>
+                                        <input class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" type="text" placeholder="Phone number">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Party Size</label>
+                                        <div class="relative mt-4">
+                                            <select name="" id="" class="appearance-none w-full border border-borderColor py-3.5 focus:outline-none px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752]">
+                                                <option value="">2 guest</option>
+                                                <option value="10">4 guest</option>
+                                            </select>
+                                            <div class="poDM_Sans-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                                                <svg class="h-3 w-3 text-mainBg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Date</label>
+                                        <input type="date" class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" placeholder="">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Time</label>
+                                        <div class="relative mt-4">
+                                            <select name="" id="" class="appearance-none w-full border border-borderColor py-3.5 focus:outline-none px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752]">
+                                                <option value="">8:30 PM</option>
+                                                <option value="10">8:50 PM</option>
+                                            </select>
+                                            <div class="poDM_Sans-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                                                <svg class="h-3 w-3 text-mainBg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-[30px] text-center">
+                                    <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7  transition ease-in-out duration-500 hover:bg-mainBg hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Find a Table</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promo Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="md:mt-[100px] mt-[30px] mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Facebook</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Instagram</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">X</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Youtube</a>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <div class="flex lg:flex-nowrap flex-wrap justify-between items-start lg:gap-y-0 gap-y-[30px]">
+                <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">123 Gourmet Street, Foodie Town,<br/> Culinary City, 56789</h4>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Mon–Fri: 11:00 AM – 10:00 PM</h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Sat–Sun: 9:00 AM – 11:00 PM</h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">contact@demorestaurant.com</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">+1 (555) 123-4567</a></h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Terms & Conditions</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Privacy Policy</a></h4>
+                </div>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor text-center">&copy; 2024 Company All Rights Reserved.</p>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <a href="index.html">
+                <img src="assets/img/footer-logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/aos_script.js" defer></script>
+    <script src="assets/js/aos.js"></script>
+</body>
+</html>

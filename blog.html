@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishDash || Blog Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="flex justify-between items-center my-[30px]">
+                    <a href="index.html">
+                        <img class="md:w-auto w-[140px]" src="assets/img/logo.svg" alt="">
+                    </a>
+
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center md:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="md:block hidden">
+                        <ul class="flex justify-between gap-[30px]">
+                            <li class="group relative w-max">
+                                <a href="index.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Home</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="about.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">About Us</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="menus.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Menus</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="blog.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Blog</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="contact.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Contact</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:block hidden">
+                        <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="bg-mainBg border border-primaryColor border-opacity-30 hidden m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-14 z-20">
+                    <div class="p-5">
+                        <ul class="dropdown flex flex-col gap-y-4">
+                            <li><a href="#" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Home</a></li>
+                            <li><a href="about.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">About Us</a></li>
+                            <li><a href="menus.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Menus</a></li>
+                            <li><a href="blog.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Blog</a></li>
+                            <li><a href="contact.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Contact</a></li>
+                        </ul>
+                        <div class="text-center mt-5">
+                            <a href="reservation.html" class="block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Banner Area Start Here -->
+    <section class="md:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        class="container xl:px-0">
+            <h2 class="font-Fraunces font-normal lg:text-130xl md:text-70xl text-42xl md:leading-80 leading-50 lg:leading-130 text-primaryColor text-center">The Blog</h2>
+            <p class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor lg:w-630 w-full mx-auto text-center pt-5">Delight in a diverse selection of flavors. From savory appetizers to decadent desserts, there’s something for everyone.</p>
+        
+            <div class="md:mt-[70px] mt-7 flex lg:flex-row flex-col justify-between xl:items-center xl:gap-0 gap-10">
+                <div class="flex xl:flex-nowrap flex-wrap gap-4">
+                    <a href="#" class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Chef's Specials</a>
+                    <a href="#" class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Food & Recipes</a>
+                    <a href="#" class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Dining Tips</a>
+                    <a href="#" class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Customer Stories</a>
+                    <div x-data="{ open: false }">
+                        <div @click.away="open = false" class="relative">
+                            <div @click="open = !open" class="flex justify-between gap-2.5 items-center" :aria-expanded="open">
+                                <h5 class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">More</h5>
+                                <a href="javascript:void(0)">
+                                    <svg :class="{'rotate-180': open}" class="transition-transform duration-500" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#FFFFFFB2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" :class="{'stroke-secondaryColor': open}"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div x-show="open" 
+                            x-transition:enter="transition ease-out duration-500"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            x-transition:leave="transition ease-in duration-500"
+                            x-transition:leave-start="opacity-100 transform translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-0" class="mt-3 overflow-hidden absolute w-[179px] border border-borderColor p-5 shadow-courseShadow -right-[1%] z-[999] bg-primaryColor transition-opacity transition-height">
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" name="optionGroup" id="option4" class="w-4 h-4 bg-primaryColor text-white" checked/>
+                                    <div class="font-DM_Sans font-normal text-base leading-7 text-mainBg">
+                                        New
+                                    </div>
+                                </label>
+                                <label class="flex items-center gap-2 mt-3">
+                                    <input type="checkbox" name="optionGroup" id="option5" class="w-4 h-4 border border-borderColor" />
+                                    <div class="font-DM_Sans font-normal text-base leading-7 text-mainBg">
+                                        Most Popular
+                                    </div>
+                                </label>
+                                <label class="flex items-center gap-2 mt-3">
+                                    <input type="checkbox" name="optionGroup" id="option5" class="w-4 h-4 border border-borderColor" />
+                                    <div class="font-DM_Sans font-normal text-base leading-7 text-mainBg">
+                                        Trending
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="flex items-center justify-between gap-2.5 xl:w-410 w-full pl-[15px] py-[15px] bg-primaryColor bg-opacity-10">
+                    <a href="#">
+                        <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.7698" cy="11.7664" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.0234 18.4849L21.5475 21.9997" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <input class="bg-transparent text-secondaryColor text-lg leading-8 font-DM_Sans font-normal w-full focus:outline-none placeholder:text-secondaryColor" type="text" placeholder="Search">
+                </form>
+            </div>
+            <div class="md:mt-[70px] mt-10 flex xl:flex-row flex-col justify-between xl:items-center xl:gap-[75px] gap-4">
+                <img class="xl:w-auto w-full" src="assets/img/blogPage/banner.png" alt="">
+                <div class="xl:w-585 w-full">
+                    <span class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor">Food & Recipes</span>
+                    <h4 class="font-Fraunces font-normal text-40xl leading-50 text-primaryColor pt-5">5 Must-Try Dishes at DishDash Restaurant </h4>
+                    <p class="font-DM_Sans font-normal text-lg leading-8 text-secondaryColor pt-5">Explore our signature dishes that keep customers coming back for more. From appetizers to desserts, these are the plates you can’t miss!</p>
+                    <div class="mt-10">
+                        <a href="blog-details.html" class="md:inline-block block text-mainBg py-[15px] px-[45px] bg-btnBg font-DM_Sans font-medium text-lg leading-8 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End Here -->
+
+    <!-- Article Area Start Here -->
+    <section class="md:mt-[100px] mt-10 bg-btnBg">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            
+            class="md:py-[100px] py-10">
+                <div class="flex xl:flex-row flex-col justify-between xl:items-center xl:gap-0 gap-10">
+                    <h4 class="xl:w-[430px] w-full font-Fraunces font-normal text-30xl leading-40 text-mainBg">Join thousands of food lovers receiving our weekly articles.</h4>
+                    <div class="xl:w-[772px] w-full flex md:flex-row flex-col justify-between gap-5">
+                        <input class="xl:w-[280px] w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg" type="text" placeholder="Name">    
+                        <input class="xl:w-[280px] w-full bg-white bg-opacity-10 focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-mainBg placeholder:text-lg placeholder:leading-8 placeholder:text-mainBg" type="text" placeholder="Email">    
+                        <a href="#" class="md:inline-block block text-center text-primaryColor py-[15px] px-[45px] bg-mainBg font-DM_Sans font-medium text-lg leading-8 border border-mainBg transition ease-in-out duration-500 hover:bg-transparent hover:text-mainBg hover:transition hover:ease-in-out hover:duration-500">Subscribe</a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Article Area End Here -->
+
+    <!-- Recent Article Area Start Here -->
+    <section class="lg:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <h4 class="font-Fraunces font-normal text-30xl leading-40 text-primaryColor">Recent Articles</h4>
+            <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] mt-[30px]">
+                <div class="bg-primaryColor bg-opacity-10">
+                    <img class="w-full" src="assets/img/blogPage/blog-1.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">The Secret Behind Our Chef’s Special</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Dive into the story and inspiration behind our Chef’s signature dish, made with love and fresh, local ingredients.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primaryColor bg-opacity-10">
+                    <img class="w-full" src="assets/img/blogPage/blog-2.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Wine Pairing 101: The Perfect Matches for Your Meal</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Learn how to pair wines with your favorite dishes from our menu, curated by our in-house sommelier.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primaryColor bg-opacity-10">
+                    <img class="w-full" src="assets/img/blogPage/blog-3.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Behind the Scenes: A Day in Our Kitchen</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Ever wondered what it’s like in our kitchen? Get a sneak peek into the fast-paced, creative world of our chefs.</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-primaryColor bg-opacity-10 md:block hidden">
+                    <img class="w-full" src="assets/img/blogPage/blog-4.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Celebrating Seasonal Ingredients This Month</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Discover the fresh, locally-sourced ingredients featured in this month’s specials and how we incorporate them into our menu.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primaryColor bg-opacity-10 md:block hidden">
+                    <img class="w-full" src="assets/img/blogPage/blog-5.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Tips for Hosting the Perfect Dinner Party</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Get expert advice from our team on planning, plating, and serving like a pro, whether you’re dining at home or with us.</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-primaryColor bg-opacity-10 md:block hidden">
+                    <img class="w-full" src="assets/img/blogPage/blog-6.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Customer Stories: Why They Love DishDash</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Hear from our loyal customers about their favorite dishes, memorable moments, and why they keep coming back.</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-primaryColor bg-opacity-10 lg:block hidden">
+                    <img class="w-full" src="assets/img/blogPage/blog-7.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Food Trends We’re Loving in 2024</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">From farm-to-table dining to plant-based innovation, check out the food trends we’re embracing this year.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primaryColor bg-opacity-10 lg:block hidden">
+                    <img class="w-full" src="assets/img/blogPage/blog-8.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">Celebrate Your Special Moments with Us</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Whether it’s a birthday, anniversary, or corporate event, learn why our restaurant is the perfect venue for your celebrations.</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-primaryColor bg-opacity-10 lg:block hidden">
+                    <img class="w-full" src="assets/img/blogPage/blog-9.png" alt="">
+                    <div class="p-[30px]">
+                        <span class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Food & Recipes</span>
+                        <h4 class="font-Fraunces font-normal text-24xl leading-34 text-primaryColor pt-[15px] transition ease-in-out duration-500 hover:text-btnBg hover:transition hover:ease-in-out hover:duration-500"><a href="blog-details.html">A Culinary Tour Around the World at DishDash</a></h4>
+                        <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor pt-[15px]">Savor flavors from across the globe with our diverse menu, featuring dishes inspired by DM_Sansnational cuisines.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination Area Start -->
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            class="lg:mt-[70px] mt-10">
+                <ul class="flex justify-center gap-4">
+                    <li class=" hidden group py-2.5 px-5 bg-primaryColor bg-opacity-10 hover:bg-btnBg transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 md:flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="flex gap-2 items-center font-DM_Sans font-medium text-sm leading-6 text-borderColor group-hover:text-white transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500">  
+                            <svg class="text-secondaryColor group-hover:text-primaryColor" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1L1 6L6 11" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-mainBg transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="group h-12 w-12 bg-btnBg hover:bg-primaryColor hover:bg-opacity-10 flex items-center justify-center transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">
+                        <a href="blog-details.html" class="font-DM_Sans font-medium text-sm leading-6 text-mainBg group-hover:text-primaryColor">1</a>
+                    </li>
+                    <li class="group h-12 w-12 bg-primaryColor bg-opacity-10 hover:bg-btnBg transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 flex items-center justify-center">
+                        <a href="blog-details.html" class="font-DM_Sans font-medium text-sm leading-6 text-primaryColor group-hover:text-mainBg">2</a>
+                    </li>
+                    <li class="group py-2.5 px-5 bg-primaryColor bg-opacity-10 hover:bg-btnBg transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="font-DM_Sans font-medium text-sm leading-6 text-primaryColor group-hover:text-mainBg">...</a>
+                    </li>
+                    <li class="group hidden py-2.5 px-5 bg-primaryColor bg-opacity-10 hover:bg-btnBg transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 md:flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="font-DM_Sans font-medium text-sm leading-6 text-primaryColor group-hover:text-mainBg">10</a>
+                    </li>
+                    <li class="group py-2.5 px-5 bg-primaryColor bg-opacity-10  hover:bg-btnBg transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="flex gap-2 items-center font-DM_Sans font-medium text-sm leading-6 text-primaryColor group-hover:text-mainBg transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500">
+                            <svg class="text-primaryColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M9 18l8.5-6L9 6l1.5-1.5L20 12l-9.5 7.5L9 18z" fill="white"  class="group-hover:fill-mainBg transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Pagination Area End -->
+        </div>
+    </section>
+    <!-- Recent Article Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="md:mt-[100px] mt-[30px] mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Facebook</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Instagram</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">X</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Youtube</a>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <div class="flex lg:flex-nowrap flex-wrap justify-between items-start lg:gap-y-0 gap-y-[30px]">
+                <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">123 Gourmet Street, Foodie Town,<br/> Culinary City, 56789</h4>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Mon–Fri: 11:00 AM – 10:00 PM</h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Sat–Sun: 9:00 AM – 11:00 PM</h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">contact@demorestaurant.com</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">+1 (555) 123-4567</a></h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Terms & Conditions</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Privacy Policy</a></h4>
+                </div>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor text-center">&copy; 2024 Company All Rights Reserved.</p>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <a href="index.html">
+                <img src="assets/img/footer-logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+</body>
+</html>

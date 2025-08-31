@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishDash || Menus Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="flex justify-between items-center my-[30px]">
+                    <a href="index.html">
+                        <img class="md:w-auto w-[140px]" src="assets/img/logo.svg" alt="">
+                    </a>
+
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center md:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="md:block hidden">
+                        <ul class="flex justify-between gap-[30px]">
+                            <li class="group relative w-max">
+                                <a href="index.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Home</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="about.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">About Us</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="menus.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Menus</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="blog.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Blog</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                            <li class="group relative w-max">
+                                <a href="contact.html" class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Contact</a>
+                                <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-[2px] bg-primaryColor group-hover:w-full"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:block hidden">
+                        <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="bg-mainBg border border-primaryColor border-opacity-30 hidden m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-14 z-20">
+                    <div class="p-5">
+                        <ul class="dropdown flex flex-col gap-y-4">
+                            <li><a href="#" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Home</a></li>
+                            <li><a href="about.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">About Us</a></li>
+                            <li><a href="menus.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Menus</a></li>
+                            <li><a href="blog.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Blog</a></li>
+                            <li><a href="contact.html" class="font-DM_Sans text-lg leading-8 text-primaryColor transition ease-in-out duration-500 font-normal hover:transition hover:ease-in-out hover:duration-500 hover:text-btnBg">Contact</a></li>
+                        </ul>
+                        <div class="text-center mt-5">
+                            <a href="reservation.html" class="block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7 border border-btnBg transition ease-in-out duration-500 hover:bg-transparent hover:border-primaryColor hover:border-opacity-30 hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Reserve a Table</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Banner Area Start Here -->
+    <section class="md:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <h2 class="font-Fraunces font-normal lg:text-130xl md:text-70xl text-42xl md:leading-80 leading-50 lg:leading-130 text-primaryColor text-center">Explore our deliciously curated menu</h2>
+            <p class="font-DM_Sans font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor lg:w-630 w-full mx-auto text-center pt-5">Delight in a diverse selection of flavors. From savory appetizers to decadent desserts, there’s something for everyone.</p>
+        </div>
+    </section>
+    <!-- Banner Area End Here -->
+
+    <!-- Menu Area Start Here -->
+    <section class="md:mt-[100px] mt-10">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <div>
+                <h4 class="font-Fraunces font-normal md:text-70xl text-36xl leading-44 md:leading-80 text-primaryColor">Breakfast</h4>
+                <div class="md:mt-[70px] mt-7 relative">
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Classic Pancake Delight</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Fluffy golden pancakes topped with fresh berries, whipped cream, and a drizzle of maple syrup.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$8.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[80%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Sunrise Omelette</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Three-egg omelette stuffed with cheese, mushrooms, bell peppers, and your choice of bacon or sausage.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$10.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Avocado Toast Special</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Smashed avocado on toasted sourdough, garnished with cherry tomatoes, arugula, and a poached egg.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$9.49</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Morning Granola Bowl</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Greek yogurt topped with crunchy granola, seasonal fruits, and a drizzle of honey.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$7.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:mt-[100px] mt-10">
+                <h4 class="font-Fraunces font-normal md:text-70xl text-36xl leading-44 md:leading-80 text-primaryColor">Lunch</h4>
+                <div class="md:mt-[70px] mt-7 relative">
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Grilled Chicken Caesar Wrap</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Succulent grilled chicken, crisp romaine, parmesan, and Caesar dressing wrapped in a spinach tortilla.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$11.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[80%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Veggie Power Bowl</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">A vibrant mix of quinoa, roasted vegetables, chickpeas, and tahini dressing.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$12.49</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Classic Cheeseburger</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Juicy beef patty topped with melted cheddar, lettuce, tomato, and onion, served with crispy fries.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$13.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Seafood Chowder</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Creamy chowder loaded with shrimp, scallops, and clams, served with a warm baguette.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$14.49</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="md:mt-[100px] mt-10">
+                <h4 class="font-Fraunces font-normal md:text-70xl text-36xl leading-44 md:leading-80 text-primaryColor">Dinner</h4>
+                <div class="md:mt-[70px] mt-7 relative">
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Herb-Crusted Salmon</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Pan-seared salmon with a herb crust, served with garlic mashed potatoes and sautéed greens.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$18.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[80%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Spaghetti Carbonara</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Classic Italian pasta with pancetta, creamy egg sauce, parmesan, and freshly cracked black pepper.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$16.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Ribeye Steak Dinner</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">Grilled ribeye steak cooked to perfection, paired with roasted vegetables and a side of red wine jus.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$24.99</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-[30px] border-b border-white border-opacity-30"/>
+                    <div class="relative group transition-all ease-in-out duration-700">
+                        <div class="group flex md:flex-row flex-col justify-between md:items-center md:gap-y-0 gap-y-4">
+                            <div class="md:w-520 w-full">
+                                <h5 class="font-Fraunces font-normal md:text-30xl text-xl leading-8 md:leading-40 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg"><a href="menu-details.html">Vegan Stir-Fry Delight</a></h5>
+                                <p class="md:pt-5 pt-3 md:text-lg text-sm leading-6 md:leading-8 font-DM_Sans font-normal text-secondaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">A medley of fresh vegetables and tofu, stir-fried in a tangy ginger-soy sauce, served with jasmine rice.</p>
+                            </div>
+                            <span class="font-Fraunces font-normal md:text-50xl text-30xl leading-40 md:leading-60 text-primaryColor group-hover:transition group-hover:ease-in-out group-hover:duration-500 transition ease-in-out duration-500 group-hover:text-btnBg">$15.49</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="lg:block hidden">
+                            <div class="z-10 hidden group-hover:flex md:w-520 w-full absolute xl:right-0 lg:right-3 right-0 md:-top-[90%] top-0 transition-transform ease-in-out duration-700">
+                                <img src="assets/img/homePage/menu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Area End Here -->
+
+    <!-- Promo Area Start Here -->
+    <section class="w-full md:h-[1073px] h-[1233px] relative md:mt-[100px] mt-10">
+        <div class="w-full md:h-[728px] h-[190px] bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/homePage/promo.png');">
+            <div class="container">
+                <div class="absolute lg:top-auto md:top-[8%] top-[17%] lg:w-886 w-full left-1/2 bottom-0 transform -translate-x-1/2 -translate-y-0">
+                    <div class="bg-primaryColor md:px-12 md:py-12 px-[18px] py-[30px] lg:mx-0 mx-[18px]">
+                        <div class="md:w-520 w-full mx-auto text-center">
+                            <h4 class="font-Fraunces font-normal md:text-40xl text-30xl leading-40 md:leading-50 text-mainBg">Reserve your table today!</h4>
+                            <p class="font-DM_Sans font-normal text-mainBg md:text-lg text-sm leading-6 md:leading-8 md:pt-5 pt-4">Book your spot now for an unforgettable dining experience. We can’t wait to serve you!</p>
+                        </div>
+                        <div class="mt-[30px]">
+                            <form>
+                                <div class="grid lg:grid-cols-2 grid-cols-1 gap-[15px]">
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">First name</label>
+                                        <input class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" type="text" placeholder="Full Name*">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Email Address</label>
+                                        <input class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" type="text" placeholder="Email address">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Phone Number*</label>
+                                        <input class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" type="text" placeholder="Phone number">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Party Size</label>
+                                        <div class="relative mt-4">
+                                            <select name="" id="" class="appearance-none w-full border border-borderColor py-3.5 focus:outline-none px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752]">
+                                                <option value="">2 guest</option>
+                                                <option value="10">4 guest</option>
+                                            </select>
+                                            <div class="poDM_Sans-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                                                <svg class="h-3 w-3 text-mainBg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Date</label>
+                                        <input type="date" class="mt-4 lg:w-[387px] w-full border border-borderColor focus:outline-none py-3.5 px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752] placeholder:text-lg placeholder:leading-8 placeholder:text-[#595752]" placeholder="">    
+                                    </div>
+                                    <div>
+                                        <label class="block text-mainBg font-DM_Sans font-medium text-lg leading-8">Time</label>
+                                        <div class="relative mt-4">
+                                            <select name="" id="" class="appearance-none w-full border border-borderColor py-3.5 focus:outline-none px-5 font-DM_Sans font-normal text-lg leading-8 text-[#595752]">
+                                                <option value="">8:30 PM</option>
+                                                <option value="10">8:50 PM</option>
+                                            </select>
+                                            <div class="poDM_Sans-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                                                <svg class="h-3 w-3 text-mainBg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-[30px] text-center">
+                                    <a href="reservation.html" class="md:inline-block block text-mainBg py-2 px-6 bg-btnBg font-DM_Sans font-medium text-base leading-7  transition ease-in-out duration-500 hover:bg-mainBg hover:text-primaryColor hover:transition hover:ease-in-out hover:duration-500">Find a Table</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promo Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="md:mt-[100px] mt-[30px] mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true"
+        
+        class="container">
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Facebook</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Instagram</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">X</a>
+                <a href="#" class="py-[15px] text-center border border-primaryColor border-opacity-30 font-DM_Sans font-medium text-lg leading-8 text-primaryColor transition ease-in-out duration-500 hover:bg-primaryColor hover:border-opacity-10 hover:bg-opacity-10 hover:transition hover:ease-in-out hover:duration-500">Youtube</a>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <div class="flex lg:flex-nowrap flex-wrap justify-between items-start lg:gap-y-0 gap-y-[30px]">
+                <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">123 Gourmet Street, Foodie Town,<br/> Culinary City, 56789</h4>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Mon–Fri: 11:00 AM – 10:00 PM</h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor">Sat–Sun: 9:00 AM – 11:00 PM</h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">contact@demorestaurant.com</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor"><a href="#">+1 (555) 123-4567</a></h4>
+                </div>
+                <div>
+                    <h4 class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Terms & Conditions</a></h4>
+                    <h4 class="pt-1.5 font-DM_Sans font-normal text-base leading-7 text-secondaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:text-primaryColor"><a href="#">Privacy Policy</a></h4>
+                </div>
+            </div>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <p class="font-DM_Sans font-normal text-base leading-7 text-secondaryColor text-center">&copy; 2024 Company All Rights Reserved.</p>
+            <hr class="border border-white border-opacity-30 w-full my-[30px]"/>
+            <a href="index.html">
+                <img src="assets/img/footer-logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/aos_script.js" defer></script>
+    <script src="assets/js/aos.js"></script>
+</body>
+</html>
